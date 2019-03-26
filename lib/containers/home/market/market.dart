@@ -13,15 +13,11 @@ class PageBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.fromLTRB(15, 50, 15, 0),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+      height: MediaQuery.of(context).size.height,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              ClockState(width: 300, bgColor: Colors.yellow[300],),
-            ],
-          ),
+          ClockState(width: 300, bgColor: Colors.yellow[300],),
         ],
       ),
     );
@@ -253,7 +249,7 @@ class MinuteArm extends SecondArm {
     double width,
     double rotation,
     Color color,
-  }) : super(key: key, width: width * 0.75, rotation: rotation, color: color);
+  }) : super(key: key, width: width * 0.85, rotation: rotation, color: color);
 }
 
 class HourArm extends SecondArm {
@@ -262,7 +258,7 @@ class HourArm extends SecondArm {
     double width,
     double rotation,
     Color color,
-  }) : super(key: key, width: width * 0.45, rotation: rotation, color: color);
+  }) : super(key: key, width: width * 0.65, rotation: rotation, color: color);
 }
 
 class TriangleClipper extends CustomClipper<Path> {
