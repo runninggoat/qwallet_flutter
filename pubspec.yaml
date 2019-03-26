@@ -48,6 +48,7 @@ flutter:
    - lib/assets/images/marketSelect.png
    - lib/assets/images/settings.png
    - lib/assets/images/settingsSelect.png
+   - lib/assets/images/iconETH.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

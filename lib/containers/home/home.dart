@@ -10,7 +10,7 @@ class Home extends StatefulWidget {
 }
 
 class HomeState extends State<Home> {
-  int _currentIndex = 0;
+  int _currentIndex = 1;
 
   List<Widget> _children = [
     Wallet(),
